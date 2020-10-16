@@ -1,1 +1,3 @@
-apply plugin: 'com.and
+apply plugin: 'com.android.application'
+
+app
