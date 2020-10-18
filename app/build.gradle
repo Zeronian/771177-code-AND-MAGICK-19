@@ -2,4 +2,4 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
 
-ap
+apply plugin: 'kotlin-android-extensions
