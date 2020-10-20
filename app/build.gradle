@@ -8,3 +8,5 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.myapp.rishabhrawat.cryptocurrencytracker"
+        minSdkVersion 21
+        
