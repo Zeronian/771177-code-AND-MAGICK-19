@@ -7,4 +7,4 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.myapp.
+        applicationId "com.myapp.rishabhrawat.cryptocurrencytracker"
