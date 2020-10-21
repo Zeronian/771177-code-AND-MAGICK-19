@@ -9,4 +9,5 @@ android {
     defaultConfig {
         applicationId "com.myapp.rishabhrawat.cryptocurrencytracker"
         minSdkVersion 21
-        
+        targetSdkVersion 27
+      
