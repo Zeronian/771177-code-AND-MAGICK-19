@@ -10,4 +10,5 @@ android {
         applicationId "com.myapp.rishabhrawat.cryptocurrencytracker"
         minSdkVersion 21
         targetSdkVersion 27
-      
+        versionCode 1
+        versi
