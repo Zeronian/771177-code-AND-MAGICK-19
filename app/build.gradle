@@ -11,4 +11,5 @@ android {
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
-        versi
+        versionName "1.0"
+        testInstrum
