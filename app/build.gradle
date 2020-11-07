@@ -23,4 +23,5 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', in
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    impleme
