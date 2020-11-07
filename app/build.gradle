@@ -24,4 +24,4 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    impleme
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7
