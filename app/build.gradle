@@ -35,4 +35,4 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:27.1.0'
     implementation 'com.android.support:design:27.1.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementa
+    implementation 'com.squareup.okhttp3:okhttp
