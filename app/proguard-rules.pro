@@ -6,4 +6,4 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # If your project uses WebView with JS, uncomment the following
-# a
+# and specify the fully qualified
