@@ -114,3 +114,9 @@ class CoinAdapter(recyclerView: RecyclerView,internal var activity: Activity,var
     }
 
     fun updateData(coinModel:List<CoinModel>)
+    {
+        this.items=coinModel
+        notifyDataSetChanged()
+    }
+
+}
