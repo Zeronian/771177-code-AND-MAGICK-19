@@ -62,3 +62,25 @@ class CoinAdapter(recyclerView: RecyclerView,internal var activity: Activity,var
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CoinViewHolder {
         val view=LayoutInflater.from(activity).inflate(R.layout.coin_layout,parent,false)
+        return CoinViewHolder(view)
+
+    }
+
+    override fun getItemCount(): Int {
+        return items.size
+    }
+
+    override fun onBindViewHolder(holder: CoinViewHolder, position: Int) {
+        val coinModel=items.get(position)
+        val item=holder as CoinViewHolder
+
+        item.coinname.text=coinModel.name
+        item.coinsymbol.text=coinModel.symbol
+        item.coinPrice.text=coinModel.price_usd
+        item.oneHourChange.text=coinModel.percent_change_1h+"%"
+        item.twentyFourChange.text=coinModel.percent_change_24h+"%"
+        item.sevenDayChange.text=coinModel.percent_change_7d+"%"
+
+        Picasso.with(activity.baseContext)
+                .load(StringBuilder(Common.imageurl).append(coinModel.symbol!!.toLowerCase())
+                        .append(".png")
