@@ -84,3 +84,33 @@ class CoinAdapter(recyclerView: RecyclerView,internal var activity: Activity,var
         Picasso.with(activity.baseContext)
                 .load(StringBuilder(Common.imageurl).append(coinModel.symbol!!.toLowerCase())
                         .append(".png")
+                        .toString()).into(item.coinIcon)
+
+        item.oneHourChange
+                .setTextColor(if(coinModel.percent_change_1h!!.contains("-"))
+                    Color.parseColor("#FF0000")
+                else
+                    Color.parseColor("#32CD32")
+                )
+
+        item.twentyFourChange
+                .setTextColor(if(coinModel.percent_change_24h!!.contains("-"))
+                    Color.parseColor("#FF0000")
+                else
+                    Color.parseColor("#32CD32")
+                )
+
+        item.sevenDayChange
+                .setTextColor(if(coinModel.percent_change_7d!!.contains("-"))
+                    Color.parseColor("#FF0000")
+                else
+                    Color.parseColor("#32CD32")
+                )
+    }
+
+    fun setLoaded()
+    {
+        isLoading=false
+    }
+
+    fun updateData(coinModel:List<CoinModel>)
