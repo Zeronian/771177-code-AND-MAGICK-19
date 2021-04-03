@@ -1,1 +1,4 @@
-package com.myapp.rishabhrawat.cryptocurrencytracker.Com
+package com.myapp.rishabhrawat.cryptocurrencytracker.Common
+
+object Common {
+    va
