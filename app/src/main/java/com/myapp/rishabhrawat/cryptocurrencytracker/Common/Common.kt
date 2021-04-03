@@ -1,4 +1,4 @@
 package com.myapp.rishabhrawat.cryptocurrencytracker.Common
 
 object Common {
-    va
+    var imageurl="https://res.cl
