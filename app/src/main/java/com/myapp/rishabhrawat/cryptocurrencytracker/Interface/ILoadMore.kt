@@ -1,1 +1,4 @@
-package com.myapp.rishabhrawat.cryptocurrencytracker
+package com.myapp.rishabhrawat.cryptocurrencytracker.Interface
+
+interface ILoadMore {
+ 
