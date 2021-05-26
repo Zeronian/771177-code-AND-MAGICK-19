@@ -10,3 +10,38 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.myapp.rishabhrawat.cryptocurrencytracker.Adapter.CoinAdapter
 import com.myapp.rishabhrawat.cryptocurrencytracker.Common.Common
+import com.myapp.rishabhrawat.cryptocurrencytracker.Interface.ILoadMore
+import com.myapp.rishabhrawat.cryptocurrencytracker.Model.CoinModel
+import kotlinx.android.synthetic.main.activity_main.*
+import okhttp3.*
+import java.io.IOException
+
+class MainActivity : AppCompatActivity(),ILoadMore {
+
+    internal var items:MutableList<CoinModel> = ArrayList()
+    internal lateinit var adapter:CoinAdapter
+    internal lateinit var client:OkHttpClient
+    internal lateinit var request:Request
+
+    override fun onLoadMore() {
+        if(items.size<Common.MAX_COIN_LOAD)
+            loadNext10Coin(items.size)
+        else
+            Toast.makeText(this@MainActivity,"Data max is "+Common.MAX_COIN_LOAD,Toast.LENGTH_LONG).show()
+
+    }
+
+    private fun loadNext10Coin(size:Int)
+    {
+        client= OkHttpClient()
+        request=Request.Builder()
+                .url(String.format("https://api.coinmarketcap.com/v1/ticker/?start=%d&limit=10",size)).build()
+
+        swipe_to_refresh.isRefreshing=true
+        client.newCall(request).enqueue(object:Callback
+        {
+            override fun onFailure(call: Call?, e: IOException?) {
+                Log.d("RISHABH",e.toString())
+            }
+
+            override fun onResponse(call: Call?, response: Response) {
