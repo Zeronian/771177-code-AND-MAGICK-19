@@ -45,3 +45,42 @@ class MainActivity : AppCompatActivity(),ILoadMore {
             }
 
             override fun onResponse(call: Call?, response: Response) {
+                val body=response.body()!!.string()
+                val gson=Gson()
+                val newitem=gson.fromJson<List<CoinModel>>(body,object : TypeToken<List<CoinModel>>(){}.type)
+                runOnUiThread {
+                    items.addAll(newitem)
+                    adapter.setLoaded()
+                    adapter.updateData(items)
+                    swipe_to_refresh.isRefreshing=false
+                }
+
+            }
+        })
+    }
+
+
+    private fun loadFirst10Coin()
+    {
+        client= OkHttpClient()
+        request=Request.Builder()
+                .url(String.format("https://api.coinmarketcap.com/v1/ticker/?start=0&limit=10")).build()
+
+        client.newCall(request).enqueue(object:Callback
+        {
+            override fun onFailure(call: Call?, e: IOException?) {
+                Log.d("RISHABH",e.toString())
+            }
+
+            override fun onResponse(call: Call?, response: Response) {
+                val body=response.body()!!.string()
+                val gson=Gson()
+                items=gson.fromJson(body,object : TypeToken<List<CoinModel>>(){}.type)
+                runOnUiThread {
+                    adapter.updateData(items)
+
+                }
+
+            }
+        })
+    }
