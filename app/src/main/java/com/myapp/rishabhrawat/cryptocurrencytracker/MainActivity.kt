@@ -84,3 +84,27 @@ class MainActivity : AppCompatActivity(),ILoadMore {
             }
         })
     }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        swipe_to_refresh.post { loadFirst10Coin() }
+
+        swipe_to_refresh.setOnRefreshListener {
+            items.clear()
+            loadFirst10Coin()
+            setupAdapter()
+        }
+
+        coin_recyclerview.layoutManager=LinearLayoutManager(this)
+        setupAdapter()
+    }
+
+    private fun setupAdapter() {
+        adapter= CoinAdapter(coin_recyclerview,this@MainActivity,items)
+        coin_recyclerview.adapter=adapter
+        adapter.setLoadMore(this)
+
+    }
+}
