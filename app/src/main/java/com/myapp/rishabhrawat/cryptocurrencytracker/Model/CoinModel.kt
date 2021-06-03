@@ -1,1 +1,1 @@
-package com.my
+package com.myapp.rishabhrawat.cryptocurre
