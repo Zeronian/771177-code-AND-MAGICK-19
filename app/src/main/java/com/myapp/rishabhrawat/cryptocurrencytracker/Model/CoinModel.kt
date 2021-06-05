@@ -1,1 +1,3 @@
-package com.myapp.rishabhrawat.cryptocurre
+package com.myapp.rishabhrawat.cryptocurrencytracker.Model
+
+class Coin
