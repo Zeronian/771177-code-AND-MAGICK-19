@@ -4,4 +4,5 @@ class CoinModel {
 
     var id:String?=null
     var name:String?=null
-    var
+    var symbol:String?=null
+   
