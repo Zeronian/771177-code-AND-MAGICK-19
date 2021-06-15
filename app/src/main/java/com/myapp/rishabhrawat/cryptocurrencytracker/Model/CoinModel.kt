@@ -1,3 +1,6 @@
 package com.myapp.rishabhrawat.cryptocurrencytracker.Model
 
-class Coin
+class CoinModel {
+
+    var id:String?=null
+   
