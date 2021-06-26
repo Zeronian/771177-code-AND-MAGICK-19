@@ -7,4 +7,5 @@ class CoinModel {
     var symbol:String?=null
     var price_usd:String?=null
     var percent_change_1h:String?=null
-    var 
+    var percent_change_24h:String?=null
+    v
