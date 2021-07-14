@@ -8,4 +8,8 @@ class CoinModel {
     var price_usd:String?=null
     var percent_change_1h:String?=null
     var percent_change_24h:String?=null
-    var percent_change_7d:String?
+    var percent_change_7d:String?=null
+
+    constructor()
+
+ 
