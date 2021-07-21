@@ -12,4 +12,4 @@ class CoinModel {
 
     constructor()
 
-    constructor(id: String?, n
+    constructor(id: String?, name: String?, symbol: Strin
