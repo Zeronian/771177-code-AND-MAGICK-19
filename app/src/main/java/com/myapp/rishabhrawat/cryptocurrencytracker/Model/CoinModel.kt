@@ -12,4 +12,4 @@ class CoinModel {
 
     constructor()
 
-    constructor(id: String?, name: String?, symbol: Strin
+    constructor(id: String?, name: String?, symbol: String?, price_usd: String?, percent_
