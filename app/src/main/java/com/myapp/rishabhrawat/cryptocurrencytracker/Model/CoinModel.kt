@@ -13,4 +13,5 @@ class CoinModel {
     constructor()
 
     constructor(id: String?, name: String?, symbol: String?, price_usd: String?, percent_change_1h: String?, percentage_change_24h: String?, percentge_change_7d: String?) {
-  
+        this.id = id
+        this.nam
