@@ -16,4 +16,5 @@ class CoinModel {
         this.id = id
         this.name = name
         this.symbol = symbol
-   
+        this.price_usd = price_usd
+     
