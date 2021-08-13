@@ -17,4 +17,5 @@ class CoinModel {
         this.name = name
         this.symbol = symbol
         this.price_usd = price_usd
-        this.percent_change_1h = per
+        this.percent_change_1h = percent_change_1h
+        this.perce
