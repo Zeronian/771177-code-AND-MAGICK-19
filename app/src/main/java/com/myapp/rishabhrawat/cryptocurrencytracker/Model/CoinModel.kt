@@ -20,3 +20,6 @@ class CoinModel {
         this.percent_change_1h = percent_change_1h
         this.percent_change_24h = percentage_change_24h
         this.percent_change_7d = percentge_change_7d
+    }
+
+}
