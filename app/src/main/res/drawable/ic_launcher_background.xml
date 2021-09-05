@@ -4,4 +4,5 @@
     android:height="108dp"
     android:viewportHeight="108"
     android:viewportWidth="108">
-    <p
+    <path
+        android:fillCol
