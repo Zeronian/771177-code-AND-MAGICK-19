@@ -43,4 +43,5 @@
         android:strokeColor="#33FFFFFF"
         android:strokeWidth="0.8" />
     <path
-        androi
+        android:fillColor="#00000000"
+        andr
