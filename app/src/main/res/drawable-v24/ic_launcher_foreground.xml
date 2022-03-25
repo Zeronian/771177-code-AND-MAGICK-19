@@ -3,4 +3,5 @@
     android:width="108dp"
     android:height="108dp"
     android:viewportHeight="108"
-    a
+    android:viewportWidth="108">
+    
