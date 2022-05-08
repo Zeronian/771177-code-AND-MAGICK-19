@@ -9,4 +9,4 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        
+        android:layout_width="match_
