@@ -13,4 +13,5 @@
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/
+            android:id="@+id/coin_recyclerview"
+          
