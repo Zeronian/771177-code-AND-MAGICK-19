@@ -34,3 +34,41 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_alignParentLeft="true">
+
+                    <TextView
+                        android:id="@+id/coin_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BTC"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:layout_marginStart="@dimen/tendp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/coin_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bitcoin"
+                        android:layout_marginStart="@dimen/tendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/section_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
