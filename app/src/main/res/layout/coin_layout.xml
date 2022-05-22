@@ -72,3 +72,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="$"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/price_usd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10,000"
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_below="@id/section_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
