@@ -143,3 +143,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="7d:"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/seven_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
