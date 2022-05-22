@@ -95,3 +95,51 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1h:"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/one_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24h:"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/twenty_four_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/section_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7d:"
