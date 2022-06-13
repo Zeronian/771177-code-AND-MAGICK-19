@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="eightdp">8dp</di
+    <dimen name="eightdp">8dp</dimen>
+    <dimen name="sixtydp">60d
