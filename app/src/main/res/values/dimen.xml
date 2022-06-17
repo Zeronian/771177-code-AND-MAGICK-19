@@ -3,4 +3,6 @@
     <dimen name="eightdp">8dp</dimen>
     <dimen name="sixtydp">60dp</dimen>
     <dimen name="tendp">10dp</dimen>
-    <dimen name="sixtee
+    <dimen name="sixteendp">16dp</dimen>
+
+</resources>
