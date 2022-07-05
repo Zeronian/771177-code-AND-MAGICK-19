@@ -1,1 +1,1 @@
-package co
+package com.myapp.rishabhrawat.cryptocurrencytra
