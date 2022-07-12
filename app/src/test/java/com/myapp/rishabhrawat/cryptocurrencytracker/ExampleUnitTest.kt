@@ -9,4 +9,6 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitT
+class ExampleUnitTest {
+    @Test
+    fun addition_isCorr
