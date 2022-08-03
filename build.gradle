@@ -22,4 +22,5 @@ allprojects {
     }
 }
 
-task clean(type: Dele
+task clean(type: Delete) {
+    delete rootProject.build
