@@ -10,4 +10,6 @@
 # Resolve links: $0 may be a link
 PRG="$0"
 # Need this for relative symlinks.
-while [ -h "$
+while [ -h "$PRG" ] ; do
+    ls=`ls -ld "$PRG"`
+    l
