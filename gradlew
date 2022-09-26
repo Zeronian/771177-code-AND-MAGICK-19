@@ -39,4 +39,9 @@ warn () {
 
 die () {
     echo
-    e
+    echo "$*"
+    echo
+    exit 1
+}
+
+# O
