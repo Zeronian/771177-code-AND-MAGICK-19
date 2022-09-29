@@ -44,4 +44,4 @@ die () {
     exit 1
 }
 
-# O
+# OS specific support (must be 'true
