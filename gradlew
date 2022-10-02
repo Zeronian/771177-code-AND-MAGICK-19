@@ -60,4 +60,8 @@ case "`uname`" in
     msys=true
     ;;
   NONSTOP* )
-    nonsto
+    nonstop=true
+    ;;
+esac
+
+CLASSPATH=$APP_HOME
