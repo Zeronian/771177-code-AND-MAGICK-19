@@ -57,4 +57,7 @@ case "`uname`" in
     darwin=true
     ;;
   MINGW* )
-    msys=tru
+    msys=true
+    ;;
+  NONSTOP* )
+    nonsto
