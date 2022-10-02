@@ -64,4 +64,4 @@ case "`uname`" in
     ;;
 esac
 
-CLASSPATH=$APP_HOME
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-w
