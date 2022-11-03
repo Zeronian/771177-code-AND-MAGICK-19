@@ -82,4 +82,4 @@ location of your Java installation."
     fi
 else
     JAVACMD="java"
-    which java >/dev/null 2>&1 || di
+    which java >/dev/null 2>&1 || die "ERROR: JAVA_HOME is not set and no 'ja
