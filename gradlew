@@ -82,4 +82,4 @@ location of your Java installation."
     fi
 else
     JAVACMD="java"
-    w
+    which java >/dev/null 2>&1 || di
