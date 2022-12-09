@@ -104,4 +104,4 @@ if [ "$cygwin" = "false" -a "$darwin" = "false" -a "$nonstop" = "false" ] ; then
     fi
 fi
 
-# Fo
+# For Darwin, add options to speci
