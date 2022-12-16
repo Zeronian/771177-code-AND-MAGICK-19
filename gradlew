@@ -110,3 +110,5 @@ if $darwin; then
 fi
 
 # For Cygwin, switch paths to Windows format before running java
+if $cygwin ; then
+    APP_HOME
