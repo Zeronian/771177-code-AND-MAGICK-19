@@ -115,4 +115,5 @@ if $cygwin ; then
     CLASSPATH=`cygpath --path --mixed "$CLASSPATH"`
     JAVACMD=`cygpath --unix "$JAVACMD"`
 
-    # We build the pattern for arguments to be conv
+    # We build the pattern for arguments to be converted via cygpath
+    ROOTDIRS
