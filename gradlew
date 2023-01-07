@@ -123,4 +123,5 @@ if $cygwin ; then
         SEP="|"
     done
     OURCYGPATTERN="(^($ROOTDIRS))"
-    # Add a user-defined pattern to the cygpat
+    # Add a user-defined pattern to the cygpath arguments
+    if [ "$GRADLE_CYGPAT
