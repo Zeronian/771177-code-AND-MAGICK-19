@@ -127,4 +127,4 @@ if $cygwin ; then
     if [ "$GRADLE_CYGPATTERN" != "" ] ; then
         OURCYGPATTERN="$OURCYGPATTERN|($GRADLE_CYGPATTERN)"
     fi
-    # Now con
+    # Now convert the arguments - klu
