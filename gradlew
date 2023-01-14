@@ -127,4 +127,4 @@ if $cygwin ; then
     if [ "$GRADLE_CYGPATTERN" != "" ] ; then
         OURCYGPATTERN="$OURCYGPATTERN|($GRADLE_CYGPATTERN)"
     fi
-    # Now convert the arguments - klu
+    # Now convert the arguments - kludge to limit ourselves to /bin/sh
