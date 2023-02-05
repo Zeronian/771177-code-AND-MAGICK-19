@@ -141,4 +141,5 @@ if $cygwin ; then
         i=$((i+1))
     done
     case $i in
-      
+        (0) set -- ;;
+        (1) se
