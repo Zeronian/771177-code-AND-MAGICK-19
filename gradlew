@@ -143,4 +143,5 @@ if $cygwin ; then
     case $i in
         (0) set -- ;;
         (1) set -- "$args0" ;;
-        (2) 
+        (2) set -- "$args0" "$args1" ;;
+        (3) set -
