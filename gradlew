@@ -160,3 +160,5 @@ save () {
     echo " "
 }
 APP_ARGS=$(save "$@")
+
+# Collect all arguments for the java
